@@ -1,0 +1,87 @@
+* {
+    margin: 0px;
+   
+}
+
+body{
+    background-color: #363636;
+}
+
+
+
+.navegacao, h1{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    padding: 1rem;
+    color: white;
+    list-style: none;
+    margin: 0;
+    background: rgb(0, 0, 0);
+    margin-bottom: -1rem;
+}
+
+
+
+.navegacao a {
+    text-decoration: none;
+    display: block;
+    padding: 1em;
+    color: white;
+    border-radius: 5px;
+}
+
+.navegacao a:hover {
+    background: #545454;
+}
+
+@media all and (max-width: 800px) {
+    .navegacao {
+        justify-content: space-around;
+    }
+}
+
+@media all and (max-width: 600px) {
+    .navegacao {
+        flex-flow: column wrap;
+        padding: 0;
+    }
+
+    .navegacao a {
+        text-align: center;
+        padding: 10px;
+        border-top: 1px solid rgba(255, 255, 255, 0.3);
+        border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    }
+
+    .navegacao li:last-of-type a {
+        border-bottom: none;
+    }
+}
+
+img {
+    max-width: 500px;
+    width: auto;
+    height: auto;
+    margin: .5rem;
+    border-radius: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: black;
+
+}
+
+.container{
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    object-fit: cover;
+    padding: 2rem auto;
+}
+
+img:hover{
+    filter: brightness(.3)
+}
+
