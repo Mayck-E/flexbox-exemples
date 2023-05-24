@@ -4,7 +4,7 @@
 }
 
 body{
-    background-color: #363636;
+    background-color: #000000;
 }
 
 
@@ -15,10 +15,10 @@ body{
     flex-flow: row wrap;
     justify-content: center;
     padding: 1rem;
-    color: white;
+    color: rgb(0, 0, 0);
     list-style: none;
     margin: 0;
-    background: rgb(0, 0, 0);
+    background: rgb(255, 255, 255);
     margin-bottom: -1rem;
 }
 
@@ -28,12 +28,13 @@ body{
     text-decoration: none;
     display: block;
     padding: 1em;
-    color: white;
+    color: rgb(77, 77, 77);
     border-radius: 5px;
 }
 
 .navegacao a:hover {
-    background: #545454;
+    background: #000000;
+    color: aliceblue;
 }
 
 @media all and (max-width: 800px) {
@@ -84,4 +85,3 @@ img {
 img:hover{
     filter: brightness(.3)
 }
-
